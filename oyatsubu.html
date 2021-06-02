@@ -1,0 +1,82 @@
+<html>
+<head>
+   <style>
+    body{
+        margin: 0;
+    }
+    h1{
+        font-size:45px;
+        text-align: center;
+        border-bottom: 1px solid gray;
+        margin: 0px;
+        padding:20px;
+    }
+    h2{
+        display:block;
+    }
+    span{
+    text-align: center;
+
+    }
+    #horizon li{
+        display : inline ; 
+        padding: 15px;
+       
+    }
+
+
+    #verticallist li{ /*그리드에 잇는 아이디*/
+        
+        border-right: 1px solid gray;
+        width: 200px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 20px;
+       
+        
+    }
+    #verticallist{
+        display:grid;
+        grid-template-columns: 300px 1fr;
+    }
+
+    
+    #arcticle{
+        padding-left : 25px;
+    }
+    @media(max-width:800px){
+        #grid{
+            display : block;
+        }
+        #grid ol{ /*그리드에 잇는 아이디*/
+        border-right: none;
+        }
+        h1{
+            border-bottom: none;
+        }
+    }
+</style>
+</head>
+
+<body>
+<h1>おやつ部</h1>
+
+<span ID="horizon">
+    <li><a href="#home">おやつ部紹介</a></li>
+    <li><a href="#news">商品案内</a></li>
+    <li><a href="#contact">店位置</a></li>
+    <li><a href="#about">配送案内</a></li>
+</span>
+  
+<div ID="verticallist">
+   <li>購入ショットカット</li>
+
+   <div ID= introduce> 
+<h2>健康とともに</h2>
+</div>
+</div>
+</body>
+
+
+
+</html>
