@@ -10,32 +10,53 @@
         border-bottom: 1px solid gray;
         margin: 0px;
         padding:20px;
+        background-color: dodgerblue;
     }
+
     h2{
         display:block;
     }
-    span{
+    #horizon{
     text-align: center;
+    border-bottom:1px solid gray
 
     }
     #horizon li{
         display : inline ; 
         padding: 15px;
-       
+        
     }
 
+    ul{
+        background-color:firebrick;
+        
+        width:150px;
+        margin:0;
+        padding:0;
+    }
 
-    #verticallist li{ /*그리드에 잇는 아이디*/
+    li a{
+        display:block;
+        padding:9px;
+        font-weight: bold;
+        color:black;
+
+    }
+
+    #verticallist{ 
         
         border-right: 1px solid gray;
         width: 200px;
         margin-left: 10px;
         margin-right: 10px;
         padding: 20px;
-       
-        
+        height: 100%;
     }
-    #verticallist{
+
+    #verticallist a:visited{
+        color:green;
+    }
+    #verticalgrid{
         display:grid;
         grid-template-columns: 300px 1fr;
     }
@@ -61,18 +82,27 @@
 <body>
 <h1>おやつ部</h1>
 
-<span ID="horizon">
+<div ID="horizon">
     <li><a href="#home">おやつ部紹介</a></li>
     <li><a href="#news">商品案内</a></li>
     <li><a href="#contact">店位置</a></li>
     <li><a href="#about">配送案内</a></li>
-</span>
+</div>
   
-<div ID="verticallist">
-   <li>購入ショットカット</li>
-
+<div ID="verticalgrid">
+    <div ID="verticallist">
+   <li><a href="#buy" >購入ショットカット</a></li>
+</div>
    <div ID= introduce> 
 <h2>健康とともに</h2>
+
+<ul>
+<li><a href=#a>home</a></li>
+<li><a href=#a>hime</a></li>
+<li><a href=#a>heme</a></li>
+<li><a href=#a>hume</a></li>
+</ul>
+
 </div>
 </div>
 </body>
